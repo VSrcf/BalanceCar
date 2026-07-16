@@ -1,6 +1,6 @@
 #include "stm32f10x.h"                  // Device header
 #include "PWM.h"
-#include "motor.h"
+#include "Motor.h"
 
 int16_t Motor_LeftSpeed;		//定义左轮速度变量
 int16_t Motor_RightSpeed;	//定义右轮速度变量

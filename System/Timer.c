@@ -1,6 +1,6 @@
 #include "stm32f10x.h"                  // Device header
 #include "PID.h"
-#include "motor.h"
+#include "Motor.h"
 #include "Encoder.h"
 
 int16_t Speed1;
