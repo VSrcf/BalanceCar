@@ -1,9 +1,11 @@
-#ifndef __PID_H
+﻿#ifndef __PID_H
 #define __PID_H
 
+#include <stdint.h>
+
 enum {
-	POSITION_PID,        //位置式
-	DELTA_PID          //增量式
+	POSITION_PID,        //浣嶇疆寮?
+	DELTA_PID          //澧為噺寮?
 };
 
 typedef struct

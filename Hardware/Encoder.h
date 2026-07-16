@@ -1,5 +1,7 @@
-#ifndef __ENCODER_H
+﻿#ifndef __ENCODER_H
 #define __ENCODER_H
+
+#include <stdint.h>
 
 void Encoder1_Init(void);
 void Encoder2_Init(void);
