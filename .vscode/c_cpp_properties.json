@@ -91,11 +91,11 @@
         {
             "name": "Target 1",
             "includePath": [
-                "c:\\Users\\33789\\Desktop\\Demo\\demo小车\\Start",
-                "c:\\Users\\33789\\Desktop\\Demo\\demo小车\\Library",
-                "c:\\Users\\33789\\Desktop\\Demo\\demo小车\\User",
-                "c:\\Users\\33789\\Desktop\\Demo\\demo小车\\System",
-                "c:\\Users\\33789\\Desktop\\Demo\\demo小车\\Hardware",
+                "c:\\Users\\33789\\Desktop\\studying\\BalanceCar\\Start",
+                "c:\\Users\\33789\\Desktop\\studying\\BalanceCar\\Library",
+                "c:\\Users\\33789\\Desktop\\studying\\BalanceCar\\User",
+                "c:\\Users\\33789\\Desktop\\studying\\BalanceCar\\System",
+                "c:\\Users\\33789\\Desktop\\studying\\BalanceCar\\Hardware",
                 "D:\\keil5\\ARM\\ARMCC\\include",
                 "D:\\keil5\\ARM\\ARMCC\\include\\rw"
             ],
