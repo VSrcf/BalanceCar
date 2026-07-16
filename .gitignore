@@ -1,0 +1,17 @@
+﻿# Keil MDK - Build outputs
+Objects/
+Listings/
+
+# Keil MDK - User-specific project files
+*.uvguix.*
+*.uvoptx
+DebugConfig/
+
+# VSCode - Logs
+.vscode/*.log
+.vscode/*.log.lock
+
+# IDE / OS
+*.bak
+*.dep
+JLinkLog.txt
