@@ -4,8 +4,8 @@
 #include <stdint.h>
 
 enum {
-	POSITION_PID,        //浣嶇疆寮?
-	DELTA_PID          //澧為噺寮?
+	POSITION_PID,        //位置式
+	DELTA_PID          //增量式
 };
 
 typedef struct
