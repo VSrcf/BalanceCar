@@ -1,7 +1,6 @@
 #include "stm32f10x.h"
 #include "PID.h"
 
-pid_t speed_pid;
 pid_t left_pid;
 pid_t right_pid;
 
@@ -25,9 +24,9 @@ void pid_Init(pid_t *pid,uint8_t mode,float p,float i,float d, float i_limit)
 
 void pid_cal(pid_t *pid)
 {
-	pid->error[0] = pid->target - pid->now_speed;        //计算误差
+	pid->error[0] = pid->target - pid->now_speed;        // 计算误差
 	
-	if (pid-> mode == POSITION_PID)                                  //位置式
+	if (pid-> mode == POSITION_PID)                      // 位置式
 	{
 		pid->p_out = pid->p * pid->error[0];
 		pid->i_out += pid->i * pid->error[0];
@@ -38,7 +37,7 @@ void pid_cal(pid_t *pid)
 		pid->out = pid->p_out + pid->i_out + pid->d_out;
 	}
 	
-	else if(pid->mode == DELTA_PID)                               // 增量式
+	else if(pid->mode == DELTA_PID)                      // 增量式
 	{
 		pid->p_out = pid->p * (pid->error[0] - pid->error[1]);
 		pid->i_out = pid->i * pid->error[0];
@@ -53,7 +52,3 @@ void pid_cal(pid_t *pid)
 	pid->error[1] = pid->error[0];
 	pid->error[2] = pid->error[1];
 }
-
-
-
-

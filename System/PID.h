@@ -1,11 +1,11 @@
-﻿#ifndef __PID_H
+#ifndef __PID_H
 #define __PID_H
 
 #include <stdint.h>
 
 enum {
-	POSITION_PID,        //位置式
-	DELTA_PID          //增量式
+	POSITION_PID,        // 位置式
+	DELTA_PID            // 增量式
 };
 
 typedef struct
@@ -25,7 +25,7 @@ typedef struct
 
 void pid_Init(pid_t *pid,uint8_t mode,float p,float i,float d, float i_limit);
 void pid_cal(pid_t *pid);
-extern pid_t speed_pid;
+
 extern pid_t left_pid;
 extern pid_t right_pid;
 
