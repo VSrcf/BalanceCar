@@ -47,8 +47,7 @@ void Infrared_OLED(void)
 	uint8_t L7 = Read_L7();
 	uint8_t L8 = Read_L8();
 	
-	OLED_ShowNum(3,1,L1,1);OLED_ShowNum(3,2,L2,1);OLED_ShowNum(3,3,L3,1);OLED_ShowNum(3,4,L4,1);
-	OLED_ShowNum(4,1,L5,1);OLED_ShowNum(4,2,L6,1);OLED_ShowNum(4,3,L7,1);OLED_ShowNum(4,4,L8,1);
+	
 	
 }
 void Infrared_Track(void)
