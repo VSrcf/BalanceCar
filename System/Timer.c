@@ -54,20 +54,7 @@ void Timer_Init(void)
 	TIM_Cmd(TIM1, ENABLE);			// 使能TIM1，定时器开始运行
 }
 
-void speed_loop(pid_t *pid,float target_speed,float current_speed, uint8_t is_left)
-{
-	
-	pid->target = target_speed;
-	pid->now_speed = current_speed;
-	
-	pid_cal(pid);
-	if (is_left) {
-		Motor_SetLeftSpeed((int8_t)pid->out);
-	} else {
-		Motor_SetRightSpeed((int8_t)pid->out);
-	}
 
-}
 
 
 

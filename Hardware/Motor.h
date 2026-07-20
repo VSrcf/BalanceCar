@@ -4,8 +4,7 @@
 #include <stdint.h>
 
 void Motor_Init(void);
-void Motor_SetRightSpeed(int8_t Speed);
-void Motor_SetLeftSpeed(int8_t Speed);
+void Motor_SetPWM(uint8_t n,int8_t PWM);
 
 int8_t Motor_GetLeftSpeed(void);
 
