@@ -4,7 +4,7 @@
 #include "LED.h"
 #include "Timer.h"
 #include "MPU6050.h"
-
+#include "Encoder.h"
 
 uint16_t count;
 
@@ -19,11 +19,7 @@ int main(void)
 	LED_Init();		//LED初始化
 	Timer_Init();		//定时器初始化
 	MPU6050_Init();		//MPU6050初始化
-
-	
-	
-
-
+	Encoder_Init();		//编码器初始化
 	
 	while (1)
 	{
