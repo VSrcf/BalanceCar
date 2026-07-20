@@ -6,7 +6,7 @@
 void Encoder_Init(void);
 
 
-int16_t Encoder1_Get(uint8_t n);
+int16_t Encoder_Get(uint8_t n);
 
 
 #endif

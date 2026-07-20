@@ -5,7 +5,7 @@
   * 参    数：无
   * 返 回 值：无
   */
-void Encoder1_Init(void)
+void Encoder_Init(void)
 {
         //TIM3编码器接口初始化
     RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM3, ENABLE);
@@ -104,7 +104,7 @@ void Encoder1_Init(void)
   * 参    数：无
   * 返 回 值：自上此调用此函数后，编码器的增量值
   */
-int16_t Encoder1_Get(uint8_t n)
+int16_t Encoder_Get(uint8_t n)
 {
 	/*使用Temp变量作为中继，目的是返回CNT后将其清零*/
 	int16_t Temp;
